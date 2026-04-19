@@ -3,6 +3,10 @@
 TOKEN=
 
 GUILD_ID=
+
 CHANNEL_ID=
+
 MUTE=false
+
 DEAF=true
+
