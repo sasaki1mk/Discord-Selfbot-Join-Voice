@@ -1,5 +1,5 @@
 const { Client } = require('discord.js-selfbot-v13');
-
+require('dotenv').config();
 const client = new Client({
     checkUpdate: false,
     readyStatus: false,
@@ -68,4 +68,4 @@ process.on('SIGTERM', () => {
     process.exit(0);
 });
 
-client.login('Token');
+client.login(process.env.TOKEN);
