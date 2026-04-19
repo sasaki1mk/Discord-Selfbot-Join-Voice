@@ -7,10 +7,10 @@ const client = new Client({
 });
 
 const VOICE_CONFIG = {
-    guild_id: '',
-    channel_id: '',
-    self_mute: false,
-    self_deaf: true
+    guild_id: process.env.GUILD_ID,
+    channel_id: process.env.CHANNEL_ID,
+    self_mute: process.env.MUTE,
+    self_deaf: process.env.DEAF
 };
 
 client.once('ready', async () => {
